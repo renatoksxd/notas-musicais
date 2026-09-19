@@ -5,14 +5,18 @@ ESCALAS = {'maior': (0, 2, 4, 5, 7, 9, 11)}
 def escala(tonica: str, tonalidade: str) -> dict[str, list[str]]:
     """
     Gera uma escala a partir de uma tônica e uma tonalidade.
+
     Args:
         tonica: Nota que será a tônica da escala
         tonalidade: Tonalidade da escala
+
     Returns:
         Um dicionário com as notas da escala e os graus.
+
     Raises:
         ValueError: Caso a tônica não seja uma nota válida.
         KeyError: Caso a escala não esxista ou não tenha sido implementada.
+        
     Examples:
         >>> escala('C', 'maior')
         {'notas': ['C', 'D', 'E', 'F', 'G', 'A', 'B'], 'graus': ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII']}
