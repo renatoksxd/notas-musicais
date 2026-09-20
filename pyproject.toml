@@ -16,7 +16,7 @@ dependencies = [
 packages = [{include = "notas_musicais", from = "src"}]
 
 [tool.poetry.scripts]
-escalas = "notas_musicais.cli:app"
+notas-musicais = "notas_musicais.cli:app"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
