@@ -3,11 +3,13 @@ on: [push, pull_request]
 
 jobs:
   test:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Copia os arquivos do repo
-        run: actions/checkout@v3.3.0
+        run: actions/checkout@v3
 
-      - name: Roda outro comando!
-        run: echo #(ls)
+      - name: Instalar o python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
