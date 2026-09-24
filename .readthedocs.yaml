@@ -9,8 +9,9 @@ build:
     python: "3.12"
 
   jobs:
+    post_create_environment:
+      - pip install poetry
+      - poetry config virtualenvs.create false
+
     post_install:
-      - pip install doc
-      - python -m pip show mkdocs-material
-      - python -c "import sys; print(sys.executable)"
-      - python -c "import site; print(site.getsitepackages())"
+      - poetry install
