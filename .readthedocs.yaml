@@ -15,3 +15,7 @@ build:
 
     post_install:
       - poetry install --only doc
+      - which python
+      - python --version
+      - python -c "import sys; print(sys.executable)"
+      - python -c "import material; print(material.__file__)"
