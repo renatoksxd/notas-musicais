@@ -1,15 +1,18 @@
 version: 2
 
+mkdocs:
+  configuration: mkdocs.yml
+
 build:
   os: "ubuntu-24.04"
   tools:
     python: "3.12"
 
   jobs:
-    post_create_environment:
-      - pip install poetry
-
     post_install:
-      - poetry install --only doc
+      - pip install --only doc
+      - python -m pip show mkdocs-material
+      - python -c "import sys; print(sys.executable)"
+      - python -c "import site; print(site.getsitepackages())"
+      - poetry run python -c "import sys; print(sys.executable)"
       - poetry run python -c "import material; print(material.__file__)"
-      - poetry run mkdocs build --clean --site-dir $READTHEDOCS_OUTPUT/html --config-file mkdocs.yml
