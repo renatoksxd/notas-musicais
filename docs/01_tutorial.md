@@ -199,4 +199,4 @@ Esse tutorial foi escrito em `2023-02-06`, os comandos podem receber novas atual
 
 Caso tenha encontrado algum erro no tutorial ou deseje melhorar seu texto. Fique a vontade para contribuir com o projeto no link a seguir.
 
-[Como contribuir com o projeto?](/02_contribua/)
+[Como contribuir com o projeto?](02_contribua.md)
