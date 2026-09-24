@@ -1,1 +1,1 @@
-::: acordes
+::: notas_musicais.acordes
