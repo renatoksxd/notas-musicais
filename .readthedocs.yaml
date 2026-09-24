@@ -11,11 +11,8 @@ build:
   jobs:
     post_create_environment:
       - pip install poetry
-      - poetry config virtualenvs.create false
 
     post_install:
       - poetry install --only doc
-      - which python
-      - python --version
-      - python -c "import sys; print(sys.executable)"
-      - python -c "import material; print(material.__file__)"
+      - poetry run python -c "import material; print(material.__file__)"
+      - poetry run mkdocs build --clean --site-dir $READTHEDOCS_OUTPUT/html --config-file mkdocs.yml
