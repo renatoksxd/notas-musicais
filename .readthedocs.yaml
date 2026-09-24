@@ -10,9 +10,7 @@ build:
 
   jobs:
     post_install:
-      - pip install --only doc
+      - pip install doc
       - python -m pip show mkdocs-material
       - python -c "import sys; print(sys.executable)"
       - python -c "import site; print(site.getsitepackages())"
-      - poetry run python -c "import sys; print(sys.executable)"
-      - poetry run python -c "import material; print(material.__file__)"
