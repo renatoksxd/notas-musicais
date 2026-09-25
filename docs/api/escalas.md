@@ -1,1 +1,1 @@
-::: escalas
+::: notas_musicais.escalas
