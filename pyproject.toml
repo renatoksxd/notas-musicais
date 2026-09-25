@@ -1,5 +1,5 @@
 [project]
-name = "notas-musicais"
+name = "notas-musicais-rks"
 version = "0.1.0"
 description = "Notas musicais é um CLI para ajudar na formação de escalas, acordes e campos harmônicos"
 license = "BeerWare"
