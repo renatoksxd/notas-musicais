@@ -20,7 +20,7 @@ O subcomando de escalas nos ajuda a ter fácil acesso a formação das escalas m
 Caso seja invocado sem nenhum parâmetro, retornará a escala de Dó maior:
 
 ```bash
-{{ commands.run }} escalas
+{{ commands.run }} escala
 ```
 
 Com isso será fornecida uma tabela no terminal informando a escala:
