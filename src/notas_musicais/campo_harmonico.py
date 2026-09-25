@@ -51,7 +51,7 @@ def _converte_graus(cifra, grau):
     return grau
 
 
-def campo_harmonico(tonica: str, tonalidade: str) -> dict[str, list[str]]:
+def campo_harmonico(tonica: str, tonalidade: str):
     """
     Gera um campo harmônico com base em uma tônica e uma tonalidade.
 

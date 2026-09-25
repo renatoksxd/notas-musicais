@@ -18,7 +18,7 @@ def _menor(cifra):
     return notas, graus
 
 
-def semitom(nota: str, intervalo: int) -> int:
+def semitom(nota: str, intervalo: int):
     # fmt: off
     """
     Calcula a distância em semitons para uma outra nota usando intervalos.
@@ -43,7 +43,7 @@ def semitom(nota: str, intervalo: int) -> int:
     return NOTAS[pos % 12]
 
 
-def triade(nota: str, tonalidade: str) -> list[str]:
+def triade(nota: str, tonalidade: str):
     # fmt: off
     """
     Gera triades a partir de uma tônica e uma tonalidade.
@@ -69,7 +69,7 @@ def triade(nota: str, tonalidade: str) -> list[str]:
     return [notas_da_escala[grau] for grau in graus]
 
 
-def acorde(cifra: str) -> dict[str, list[str]]:
+def acorde(cifra: str):
     # fmt: off
     """
     Gera as notas de um acorde partindo de uma cifra.
